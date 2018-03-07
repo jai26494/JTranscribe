@@ -30,12 +30,12 @@ setInterval(function() {
   if(isPaused){
 
   }else{
-    au.currentTime = au.currentTime-4;
+    au.currentTime = au.currentTime-localStorage.rt;
     au.play();
   }
 
 
-  }, 10000);
+  }, (localStorage.pl*1000));
 
 }
 
